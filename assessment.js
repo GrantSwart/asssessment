@@ -29,7 +29,7 @@ function calculatetax(gross_salary) {
             return tax_values;
         case (gross_salary >= 10600 && gross_salary <= 31000):
             // Push the values calculated for gross salary between 10600 and 31000 and assign them to tax_values array
-            tax_values.push(gross_salary, "10000", ((gross_salary-10000) * 20 / 100), "No Tax", (gross_salary - ((gross_salary-10000) * 20 / 100)));
+            tax_values.push(gross_salary, "10000", ((gross_salary-10600) * 20 / 100), "No Tax", (gross_salary - ((gross_salary-10000) * 20 / 100)));
             // Return the tax_values array to display function
             return tax_values;
         case (gross_salary > 31000):
